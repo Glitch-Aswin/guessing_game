@@ -4,7 +4,6 @@ let range =20 ;
 let myNum = parseInt((Math.random()*range) + 1);
 let score=20;
 let highscore=0;
-console.log(myNum);
 const displayMessage = (message) => {
     document.querySelector('.message').textContent = message;
   };
@@ -14,7 +13,6 @@ document.querySelector('.range').addEventListener('click',function(){
     range = rangeA;
     document.querySelector('.between').textContent = `Range:0-${range}` ;
     myNum = parseInt((Math.random()*range) + 1);
-    console.log(myNum);
 }) 
 
 document.querySelector('.check').addEventListener('click',function(){
